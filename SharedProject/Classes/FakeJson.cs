@@ -1,0 +1,17 @@
+﻿using System;
+namespace SharedProject.Classes
+{
+    public static class FakeJsons
+    {
+        public static string GameListJson = "{\n  \"data\": {\n    \"status\": \"success\",\n    \"msg\": \"\",\n    \"GameList\": [\n      {\n        \"ID\": \"101\",\n        \"Date\": \"2014-11-25\",\n        \"GameName\": \"Grumoies 18 Holes\",\n        \"StartTime\": \"12:00\",\n        \"StopTime\": \"14:00\",\n        \"Avatar\": \"1.jpg\",\n        \"Where\": \"stableford\",\n        \"Drift\": \"5\",\n        \"status\": \"1\"\n      },\n      {\n        \"ID\": \"102\",\n        \"Date\": \"2014-11-25\",\n        \"GameName\": \"Friendly 9 Holes\",\n        \"StartTime\": \"15:00\",\n        \"StopTime\": \"17:30\",\n        \"Avatar\": \"2.jpg\",\n        \"Where\": \"best club\",\n        \"Drift\": \"5\",\n        \"status\": \"0\"\n      },\n      {\n        \"ID\": \"103\",\n        \"Date\": \"2014-11-26\",\n        \"GameName\": \"New Game\",\n        \"StartTime\": \"10:00\",\n        \"StopTime\": \"12:00\",\n        \"Avatar\": \"3.jpg\",\n        \"Where\": \"somewhere\",\n        \"Drift\": \"15\",\n        \"status\": \"0\"\n      },\n      {\n        \"ID\": \"104\",\n        \"Date\": \"2014-11-27\",\n        \"GameName\": \"Game for Jane Doe\",\n        \"StartTime\": \"9:00\",\n        \"StopTime\": \"11:00\",\n        \"Avatar\": \"4.jpg\",\n        \"Where\": \"Best Location\",\n        \"Drift\": \"0\",\n        \"status\": \"1\"\n      },\n      {\n        \"ID\": \"105\",\n        \"Date\": \"2014-11-27\",\n        \"GameName\": \"Jane Doe\",\n        \"StartTime\": \"15:40\",\n        \"StopTime\": \"19:00\",\n        \"Avatar\": \"5.jpg\",\n        \"Where\": \"Some Club\",\n        \"Drift\": \"20\",\n        \"status\": \"0\"\n      }\n    ]\n  }\n}";
+
+        public static string NotificationJson = "{\n  \"data\": {\n    \"status\": \"success\",\n    \"msg\": \"\",\n    \"Notification\": [\n      {\n        \"ID\": \"101\",\n        \"Date\": \"2014-06-25\",\n        \"Message\": \"You have been invited to “Friendly vs Badgemore Park 22 July 2016”\",\n        \"Avatar\": \"1.jpg\"\n      },\n      {\n        \"ID\": \"101\",\n        \"Date\": \"2014-06-25\",\n        \"Message\": \"Baz Bailey “Thanks Richard, I will see you on the Tee”\",\n        \"Avatar\": \"1.jpg\"\n      },\n      {\n        \"ID\": \"101\",\n        \"Date\": \"2014-06-25\",\n        \"Message\": \"Albatros Club Would be closed this Friday\",\n        \"Avatar\": \"1.jpg\"\n      },\n      {\n        \"ID\": \"101\",\n        \"Date\": \"2014-06-25\",\n        \"Message\": \"You have invited to attend this night club event.\",\n        \"Avatar\": \"1.jpg\"\n      },\n      {\n        \"ID\": \"101\",\n        \"Date\": \"2014-06-25\",\n        \"Message\": \"Please complete your profile.\",\n        \"Avatar\": \"1.jpg\"\n      }\n    ]\n  }\n}";
+
+        public static string VideoListJson = "{\n  \"data\": {\n    \"status\": \"success\",\n    \"msg\": \"\",\n    \"VideoList\": [\n      {\n        \"ID\": \"101\",\n        \"Time\": \"13:06\",\n        \"Title\": \"The West Course, Hole 1\",\n        \"Thumb\": \"v1.jpg\"\n      },\n      {\n        \"ID\": \"101\",\n        \"Time\": \"08:06\",\n        \"Title\": \"The West Course, Hole 2\",\n        \"Thumb\": \"v2.jpg\"\n      },\n      {\n        \"ID\": \"101\",\n        \"Time\": \"10:01\",\n        \"Title\": \"The West Course, Hole 3\",\n        \"Thumb\": \"v3.jpg\"\n      }\n    ]\n  }\n}";
+
+
+    }
+
+
+
+}

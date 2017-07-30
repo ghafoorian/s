@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Hello World, Click Me!</string>
+    <string name="ApplicationName">MemberMatch</string>
+  
+  <!-- Login -->
+  <string name="username_label">U S E R N A M E</string>
+  <string name="password_label">P A S S W O R D</string>
+  <string name="username_hint">Username</string>
+  <string name="password_hint">PassWord</string>
+  <string name="remember_me">REMEMBER ME?</string>
+  <string name="sign_in">SIGN IN</string>
+  <string name="forgot_pass">FORGOT USERNAME OR PASS?</string>
+  <string name="empty_data">Username or Password is empty!</string>
+  <string name="check_data">Please check your username and password</string>
+  <!--Messages-->
+  <string name="ok">OK</string>
+  <string name="no_network">No Network Connection</string>
+  <!--Progile-->
+  <string name="my_profile">My Profile</string>
+  <string name="save">Save</string>
+  <string name="smoker">Smoker</string>
+  <string name="handicap">Perferred Handicap</string>
+  <string name="section">Perferred Section</string>
+  <string name="day_times_label">Perferred Playing day &amp; times</string>
+  <string name="day_button">Days/Times</string>
+  <string name="saturday">Saturday</string>
+  <string name="sunday">Sunday</string>
+  <string name="monday">Monday</string>
+  <string name="tuesday">Tuesday</string>
+  <string name="wednesday">Wednesday</string>
+  <string name="thursday">Thursday</string>
+  <string name="friday">Friday</string>
+  <string name="occupation">Occupation</string>
+  <string name="about_me">About Me</string>
+  <string name="my_interests">My Interests</string>
+  <string name="sign_out">Sign Out</string>
+  
+</resources>

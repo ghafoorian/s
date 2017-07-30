@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.membermatch" android:versionCode="1" android:versionName="1.0">
+  <uses-sdk android:minSdkVersion="16" />
+  <application android:label="MemberMatch" android:icon="@mipmap/ic_launcher" android:theme="@style/Theme.MyApp">
+    <!--<receiver android:name="com.onesignal.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+        <category android:name="com.membermatch" />
+      </intent-filter>
+    </receiver>-->
+
+    <!--<receiver android:name=".NetworkStateReceiver">
+      <intent-filter>
+        <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+      </intent-filter>
+    </receiver>-->
+  </application>
+
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <!--<permission android:name="com.membermatch.Droid.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+  <uses-permission android:name="com.membermatch.Droid.permission.C2D_MESSAGE" />-->
+</manifest>

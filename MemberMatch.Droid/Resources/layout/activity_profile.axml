@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_scrollFlags="scroll|enterAlways">
+            <ImageView
+                android:layout_width="@dimen/toolbar_logo_width"
+                android:layout_height="@dimen/toolbar_logo_height"
+                android:src="@drawable/logo"
+                android:layout_gravity="center" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/profile_page_padding"
+        android:background="@color/profileGrayBackground"
+        android:orientation="vertical">
+        <RelativeLayout          
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/profile_save_height"
+                android:text="@string/save"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:background="@drawable/blue_button_background" />
+            <TextView
+                android:id="@+id/my_profile_txtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:text="@string/my_profile"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/profile_cardview_margin"
+            android:padding="@dimen/profile_cardview_padding"
+            android:background="@android:color/white"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="7dp"
+            app:cardUseCompatPadding="true">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Refractored.Controls.CircleImageView
+                            android:id="@+id/user_avatar"
+                            android:layout_width="@dimen/profile_user_avatar_size"
+                            android:layout_height="@dimen/profile_user_avatar_size"
+                            android:layout_alignParentLeft="true"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/icon" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@+id/user_avatar"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/fullname_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:text="Andy Cain"
+                                android:textSize="@dimen/profile_fullname_size" />
+                            <TextView
+                                android:id="@+id/mobile_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Andy Cain"
+                                android:textColor="@android:color/black"
+                                android:drawableLeft="@drawable/mobile" />
+                            <TextView
+                                android:id="@+id/email_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="asma.ghafooriam"
+                                android:textColor="@android:color/black"
+                                android:drawableLeft="@drawable/envelope" />
+                            <TextView
+                                android:id="@+id/calendar_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SevenDay Member"
+                                android:layout_weight="1"
+                                android:textColor="@android:color/black"
+                                android:drawableLeft="@drawable/small_calendar" />
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/handicap_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/handicap"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:text="555"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <CheckBox
+                        android:id="@+id/smoker_cbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/profile_profile_smoker_margin"
+                        android:text="@string/smoker"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/profile_checkbox_text_size"
+                        android:buttonTint="@color/blue"
+                        android:theme="@style/ChexkBox" />
+                    <TextView
+                        android:id="@+id/handicap_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/profile_handicap_label_margin"
+                        android:text="@string/handicap"
+                        android:textSize="@dimen/profile_handicap_label_text_size"
+                        android:textColor="@color/gray" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/handicap1_btn"
+                            android:layout_width="@dimen/profile_handicap_size"
+                            android:layout_height="@dimen/profile_handicap_size"
+                            android:background="@drawable/handicap"
+                            android:text="555"
+                            android:textSize="@dimen/profile_handicap_text_size"
+                            android:textStyle="bold"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="@android:color/black" />
+                        <com.syncfusion.sfrangeslider.SfRangeSlider
+                            android:id="@+id/range_slider"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="@dimen/profile_slider_margin"
+                            android:layout_marginRight="@dimen/profile_slider_margin"
+                            android:layout_centerInParent="true" />
+                        <Button
+                            android:id="@+id/handicap2_btn"
+                            android:layout_width="@dimen/profile_handicap_size"
+                            android:layout_height="@dimen/profile_handicap_size"
+                            android:background="@drawable/handicap"
+                            android:text="50"
+                            android:textSize="@dimen/profile_handicap_text_size"
+                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@android:color/black" />
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/section_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/profile_section_margin"
+                        android:text="@string/section"
+                        android:textSize="@dimen/profile_handicap_text_size"
+                        android:textColor="@color/gray" />
+                    <TextView
+                        android:id="@+id/section_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Men"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/gray" />
+                    <TextView
+                        android:id="@+id/day_times_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/profile_section_margin"
+                        android:text="@string/day_times_label"
+                        android:textSize="@dimen/profile_daytimes_label_text_size"
+                        android:textColor="@color/gray" />
+                    <Button
+                        android:id="@+id/section_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/profile_save_height"
+                        android:layout_marginTop="@dimen/profile_daytimes_button_margin"
+                        android:layout_marginBottom="@dimen/profile_daytimes_button_margin"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="@string/day_button"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/blue_button_background" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/profile_days_cbox_margin"
+                        android:gravity="center"
+                        android:weightSum="4">
+                        <CheckBox
+                            android:id="@+id/monday_cbox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/monday"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/profile_checkbox_text_size"
+                            android:buttonTint="@color/blue"
+                            android:theme="@style/ChexkBox" />
+                        <TextView
+                            android:id="@+id/monday_clock_txt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="07:00 - 23:59"
+                            android:textColor="@android:color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/profile_days_cbox_margin"
+                        android:gravity="center"
+                        android:weightSum="4">
+                        <CheckBox
+                            android:id="@+id/tuseday_cbox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/tuesday"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/profile_checkbox_text_size"
+                            android:buttonTint="@color/blue"
+                            android:theme="@style/ChexkBox" />
+                        <TextView
+                            android:id="@+id/tuesday_clock_txt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="07:00 - 23:59"
+                            android:textColor="@android:color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/profile_days_cbox_margin"
+                        android:gravity="center"
+                        android:weightSum="4">
+                        <CheckBox
+                            android:id="@+id/wednesday_cbox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/wednesday"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/profile_checkbox_text_size"
+                            android:buttonTint="@color/blue"
+                            android:theme="@style/ChexkBox" />
+                        <TextView
+                            android:id="@+id/wednesday_clock_txt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="07:00 - 23:59"
+                            android:textColor="@android:color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/profile_days_cbox_margin"
+                        android:gravity="center"
+                        android:weightSum="4">
+                        <CheckBox
+                            android:id="@+id/thursday_cbox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/thursday"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/profile_checkbox_text_size"
+                            android:buttonTint="@color/blue"
+                            android:theme="@style/ChexkBox" />
+                        <TextView
+                            android:id="@+id/thursday_clock_txt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="07:00 - 23:59"
+                            android:textColor="@android:color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/profile_days_cbox_margin"
+                        android:gravity="center"
+                        android:weightSum="4">
+                        <CheckBox
+                            android:id="@+id/friday_cbox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/friday"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/profile_checkbox_text_size"
+                            android:buttonTint="@color/blue"
+                            android:theme="@style/ChexkBox" />
+                        <TextView
+                            android:id="@+id/friday_clock_txt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="07:00 - 23:59"
+                            android:textColor="@android:color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/profile_days_cbox_margin"
+                        android:gravity="center"
+                        android:weightSum="4">
+                        <CheckBox
+                            android:id="@+id/saturday_cbox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/saturday"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/profile_checkbox_text_size"
+                            android:buttonTint="@color/blue"
+                            android:theme="@style/ChexkBox" />
+                        <TextView
+                            android:id="@+id/saturday_clock_txt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="07:00 - 23:59"
+                            android:textColor="@android:color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/profile_days_cbox_margin"
+                        android:gravity="center"
+                        android:weightSum="4">
+                        <CheckBox
+                            android:id="@+id/sunday_cbox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/sunday"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/profile_checkbox_text_size"
+                            android:buttonTint="@color/blue"
+                            android:theme="@style/ChexkBox" />
+                        <TextView
+                            android:id="@+id/sunday_clock_txt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="07:00 - 23:59"
+                            android:textColor="@android:color/black" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/occupation_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/profile_section_margin"
+                        android:text="@string/occupation"
+                        android:textSize="@dimen/profile_handicap_text_size"
+                        android:textColor="@color/gray" />
+                    <TextView
+                        android:id="@+id/occupation_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Legal"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/gray" />
+                    <TextView
+                        android:id="@+id/about_me_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/profile_section_margin"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/about_me"
+                        android:textSize="@dimen/profile_handicap_text_size"
+                        android:textColor="@color/gray" />
+                    <EditText
+                        android:id="@+id/about_me_etxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:gravity="top"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="@dimen/profile_about_me_margin"
+                        android:layout_marginRight="@dimen/profile_about_me_margin"
+                        android:background="@drawable/textview_round_border"
+                        android:text="I am Asma"
+                        android:textColor="@android:color/black" />
+                    <Button
+                        android:id="@+id/interest_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/profile_interest_button_margin"
+                        android:layout_marginLeft="@dimen/profile_buttons_margin"
+                        android:layout_marginRight="@dimen/profile_buttons_margin"
+                        android:text="@string/my_interests"
+                        android:background="@drawable/blue_button_background" />
+                    <Button
+                        android:id="@+id/signout_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/profile_interest_button_margin"
+                        android:layout_marginLeft="@dimen/profile_buttons_margin"
+                        android:layout_marginRight="@dimen/profile_buttons_margin"
+                        android:text="@string/sign_out"
+                        android:background="@drawable/red_button_background" />
+                </LinearLayout>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

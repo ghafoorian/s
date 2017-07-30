@@ -1,0 +1,47 @@
+﻿<resources>
+  <!--xhdpi-->
+  
+  <!--Login-->
+  <dimen name="login_page_padding">40dp</dimen>
+  <dimen name="login_logo_size">100dp</dimen>
+  <dimen name="login_label_text_size">15dp</dimen>
+  <dimen name="login_text_size">14dp</dimen>
+  <dimen name="login_username_margin">40dp</dimen>
+  <dimen name="login_password_margin">20dp</dimen>
+  <dimen name="login_remember_text_size">17dp</dimen>
+  <dimen name="login_forgot_text_size">15dp</dimen>
+  <dimen name="login_signin_text_size">17dp</dimen>
+  <dimen name="login_signin_margin">50dp</dimen>
+  <dimen name="login_signin_marginRL">15dp</dimen>
+  <dimen name="login_signin_Height">40dp</dimen>
+  <dimen name="login_loading_size">40dp</dimen>
+
+  <!--Toolbar-->
+  <dimen name="toolbar_logo_width">140dp</dimen>
+  <dimen name="toolbar_logo_height">40dp</dimen>
+
+  <!--Profile-->
+  <dimen name="profile_page_padding">4dp</dimen>
+  <dimen name="profile_save_height">40dp</dimen>
+  <dimen name="profile_cardview_margin">5dp</dimen>
+  <dimen name="profile_cardview_padding">5dp</dimen>
+  <dimen name="profile_user_avatar_size">100dp</dimen>
+  <dimen name="profile_fullname_size">16dp</dimen>
+  <dimen name="profile_checkbox_text_size">16dp</dimen>
+  <dimen name="profile_handicap_label_margin">10dp</dimen>
+  <dimen name="profile_handicap_label_text_size">16dp</dimen>
+  <dimen name="profile_handicap_size">30dp</dimen>
+  <dimen name="profile_handicap_text_size">14dp</dimen>
+  <dimen name="profile_smoker_margin">8dp</dimen>
+  <dimen name="profile_slider_margin">35dp</dimen>
+  <dimen name="profile_section_margin">20dp</dimen>
+  <dimen name="profile_playing_label_margin">8dp</dimen>
+  <dimen name="profile_daytimes_label_text_size">16dp</dimen>
+  <dimen name="profile_daytimes_label_margin">10dp</dimen>
+  <dimen name="profile_daytimes_button_margin">7dp</dimen>
+  <dimen name="profile_days_cbox_margin">10dp</dimen>
+  <dimen name="profile_interest_button_margin">40dp</dimen>
+  <dimen name="profile_buttons_height">25dp</dimen>
+  <dimen name="profile_buttons_margin">20dp</dimen>
+  <dimen name="profile_about_me_margin">5dp</dimen>
+</resources>

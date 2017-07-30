@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>7c59be25-32e9-4e09-921f-fd0ede5d28c3</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SharedProject</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_CreateGame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_EditProfile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_EventOperation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_FindGame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_GetActivePlayNow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_GetClubCompetitions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_GetClubEvents.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_GetCourseStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_GetLinks.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_GetMyMatches.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_GetProfile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_GetSuggestions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_GolfLinkOperation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_Login.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_MatchOperation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_MatchPlayers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_MatchView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_PlayNow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_PreList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_SearchPlayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\API_SendNotifId.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\AppGlobal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\DigitsOnly.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\ExpireCheck.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\FakeJson.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\HandicapSlider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\Product.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\ReceivedApi.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\ClubEventsCache.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DataBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\MyMatchesCache.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\PreListCache.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\Enums.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ApiAddresses.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ClubEvents_Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\GameView_Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\GolfLinks_Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Player_Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PlayNow_Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PreList_Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Profile_Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Requests_API.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServerCommunication\ExtendedRestClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServerCommunication\PingReport.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServerCommunication\PingServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServerCommunication\WebService.cs" />
+  </ItemGroup>
+</Project>

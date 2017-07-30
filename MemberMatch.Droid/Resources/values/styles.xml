@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="Theme.MyApp" parent="Base.Theme.MyApp">
+  </style>
+
+  <style name="Base.Theme.MyApp" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <!--<item name="android:windowTranslucentStatus">true</item>-->   
+  </style>
+
+  <style name="SplashStyle" parent ="Base.Theme.MyApp">
+    <item name="android:windowBackground">@drawable/splash</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+  
+  <style name="ChexkBox" parent="Theme.AppCompat.Light.NoActionBar">   
+    <item name="colorAccent">@color/blue</item>
+    <item name="android:textColorSecondary">@color/blue</item>
+  </style>
+</resources>
